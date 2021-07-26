@@ -38,9 +38,14 @@ th, td {
     margin-top: 10px;
     background: #dac9b4;
     font-family: Verdana, sans-serif;
+    border-radius: 4px;
     /*    color: #f1f1f1;*/
 }
 
+.header p {
+    text-align:start;
+    margin: 0px 0px 0px 0px;
+}
 .content {
     padding: 16px;
 }
