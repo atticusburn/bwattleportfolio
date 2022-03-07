@@ -64,10 +64,10 @@ th, td {
 
 .h2-BlueBG {
     font-size: 20pt;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    background-color: #b48f56;
-    width: 40%;
+    text-align: center;
+    color: white;
+    background-color: rgb(45, 78, 128);
+    font-weight: bold;
 /*    font-family: Calibri;*/
 }
 
@@ -127,49 +127,3 @@ th, td {
 .header-logo:hover .overlay {
     opacity: 1;
   }
-
-.h1_title {
-    font-size: 48pt;
-    text-align: center;
-    font-family: 'Impact', 'Copperpalte', 'Helvetica';
-    color: white;
-    -webkit-text-stroke: 1px black;
-}
-
-.div_whitespace {
-    height: 100px;
-}
-
-.navbar {
-    background-color:#ffffff;
-    width: 70px;
-    height: 60%;
-    position: fixed;
-    margin-top: 10%;
-    opacity: 0.1;
-    transition: .5s ease;
-    font-family: 'Futura', 'Helvetica';
-    font-size: 14pt;
-    text-align: center;
-    margin-left: 3px;
-    border: 2px solid #5a5a3d;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.navbar:hover {
-    opacity: 0.9;
-    border-color:#2e2419;
-    border: 2px solid black;
-
-}
-
-.navbar_button {
-    background-color: #838383;
-    width: 65px;
-    height: 40px;
-}
