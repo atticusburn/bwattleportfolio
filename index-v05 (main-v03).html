@@ -1,21 +1,13 @@
 <!doctype html>
-<!--fixed header code copied from: https://www.w3schools.com/howto/howto_js_sticky_header.asp
-    but JavaScript seemed problematic, so was abandoned -->
-<!-- 26/6/21 Nev "fixed" header is very temperamental on Android mobile - Chrome v91.0.4472.101
-    it was broken by this 40 character email with the normal font:
-    Xxxxx.Xxxxxxxxxxxxx@education.nsw.gov.au
-    Also broken by long web links - avoided with a short "display text" or small font.
-    If fixed header is broken - delete sections 1 by 1 to find the problem -->
 <html>
 <head>
     <meta charset="utf-8">
     <title>Portfolio - Atticus</title>
-    <link rel="icon" href="images/logoV2x40.png">
-    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="assets/images/logoV2x40.png">
+    <link rel="stylesheet" href="main-v03.css">
     <style type="text/css">
         body {
-            /*background-color: rgb(191, 0, 255); */
-            background-color: #fff3e4; /*light orange*/
+            background-color: #ffffff; 
         }
     </style>
 </head>
@@ -23,8 +15,7 @@
     <div id="A01"></div>
     <div class="header" id="myHeader ">            
         <div class="header-logo", style="float: left; padding-left: 10px; padding-top: 2px;">
-            <a href="index-latest.html"><img src="images/logoV2_transparent.png" width="100"></a>
-            <!--<div class="overlay">Test</div> -->
+            <a href="index-latest.html"><img src="assets/images/logoV2_transparent.png" width="100"></a>
         </div>
         <div class="header-links">
             <div><a href="folio-latest.html">Folio</a></div>
@@ -33,35 +24,21 @@
         </div>
     </div>
     <div class="navbar">
-        <a href="#A01">Top</a>
+        <a href="#A01" style="flex-grow: 0.1"><div class="navbar_button">Top</div></a>
+        <a href="#A02" style="flex-grow: 0.1"><div class="navbar_button">Middle</div></a>
+
     </div>
     <div class="div_whitespace"></div>
     <div>
         <h1 class="h1_title">
-            Atticus's IPT Website
+            Index
         </h1>
     </div>
-    <!--<p class="h1-18ptBold">
-        <img src="images/logoV2_transparent.png" width="200" alt="atticus logo" title="atticus Logo"><br>
-    </p>
-    <p class="h1-18ptBold">
-        WEB&nbsp;&nbsp;TEMPLATE - HOME PAGE
-        <br>
-    </p>
-    <p class="h1-18ptBold">
-        The repository for this site is at: <span class="text-red">&nbsp;<a href="https://github.com/atticusburn/bwattleportfolio">https://github.com/atticusburn/bwattleportfolio</a></span>
-    </p>-->
     <div class="div_whitespace"></div>
     <div class="content">
-        <!--<a href="index.html">Home</a>-->
-        <br>
-        <br>
         <div class="h2-BlueBG">
             Previous Versions
         </div>
-        <br>
-        <br>
-        <br>
         <div>
             <table>
                 <tr>
@@ -100,7 +77,6 @@
             <br>
             <div class="h1-18ptBold" id="A02">
             </div>
-            <!--<a href="index.html">Home</a>-->
             <br>
             <br>
             <p class="h2-BlueBG">1st heading - but anchor is 4 lines above </p>

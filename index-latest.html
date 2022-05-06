@@ -1,134 +1,39 @@
-<!doctype html>
-<!--fixed header code copied from: https://www.w3schools.com/howto/howto_js_sticky_header.asp
-    but JavaScript seemed problematic, so was abandoned -->
-<!-- 26/6/21 Nev "fixed" header is very temperamental on Android mobile - Chrome v91.0.4472.101
-    it was broken by this 40 character email with the normal font:
-    Xxxxx.Xxxxxxxxxxxxx@education.nsw.gov.au
-    Also broken by long web links - avoided with a short "display text" or small font.
-    If fixed header is broken - delete sections 1 by 1 to find the problem -->
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
+
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Portfolio - Atticus">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Atticus</title>
     <link rel="icon" href="assets/images/logoV2x40.png">
     <link rel="stylesheet" href="main.css">
-    <style type="text/css">
-        body {
-            /*background-color: rgb(191, 0, 255); */
-            background-color: #fff3e4; /*light orange*/
-        }
-    </style>
 </head>
-<body>
-    <div id="A01"></div>
-    <div class="header" id="myHeader ">            
-        <div class="header-logo", style="float: left; padding-left: 10px; padding-top: 2px;">
-            <a href="index-latest.html"><img src="assets/images/logoV2_transparent.png" width="100"></a>
-            <!--<div class="overlay">Test</div> -->
-        </div>
-        <div class="header-links">
-            <div><a href="folio-latest.html">Folio</a></div>
-            <div><a href="theory-latest.html">Theory</a></div>
-            <div><a href="https://github.com/atticusburn/bwattleportfolio" target="_blank">Repository</a></div>
-        </div>
-    </div>
-    <div class="navbar">
-        <a href="#A01" style="flex-grow: 0.1"><div class="navbar_button">Top</div></a>
-        <a href="#A02" style="flex-grow: 0.1"><div class="navbar_button">Middle</div></a>
 
-    </div>
-    <div class="div_whitespace"></div>
-    <div>
-        <h1 class="h1_title">
-            Atticus's IPT Website
-        </h1>
-    </div>
-    <!--<p class="h1-18ptBold">
-        <img src="images/logoV2_transparent.png" width="200" alt="atticus logo" title="atticus Logo"><br>
-    </p>
-    <p class="h1-18ptBold">
-        WEB&nbsp;&nbsp;TEMPLATE - HOME PAGE
-        <br>
-    </p>
-    <p class="h1-18ptBold">
-        The repository for this site is at: <span class="text-red">&nbsp;<a href="https://github.com/atticusburn/bwattleportfolio">https://github.com/atticusburn/bwattleportfolio</a></span>
-    </p>-->
-    <div class="div_whitespace"></div>
-    <div class="content">
-        <!--<a href="index.html">Home</a>-->
-        <br>
-        <br>
-        <div class="h2-BlueBG">
-            Previous Versions
-        </div>
-        <br>
-        <br>
-        <br>
-        <div>
-            <table>
-                <tr>
-                    <td><a href="folio-v01.html" title="Open this version" target="_blank">folio v1.01</a></td>
-                    <td>This page is very simple in fact, at this stage, it&#39;s blank. I&#39;m just happy that it works. </td>
-                </tr>
-                <tr>
-                    <td><a href="folio-v02.html" title="Open this version" target="_blank">folio v1.02</a></td>
-                    <td>Updated background colour and added main logo</td>
-                </tr>
-                <tr>
-                    <td><a href="folio-v03.html" title="Open this version" target="_blank">folio v1.03</a></td>
-                    <td>This is not ready yet</td>
-                </tr>
-                <tr>
-                    <td><a href="folio-v01.html" title="Open this version" target="_blank">folio v1.01</a></td>
-                    <td>This is not ready yet</td>
-                </tr>
-                <tr>
-                    <td><a href="folio-v01.html" title="Open this version" target="_blank">folio v1.01</a></td>
-                    <td>This is not ready yet</td>
-                </tr>
-                <tr>
-                    <td ><a href="folio-v01.html" title="Open this version" target="_blank">folio v1.01</a></td>
-                    <td >This is not ready yet</td>
-                </tr>
-                <tr>
-                    <td><a href="folio-v01.html" title="Open this version" target="_blank">folio v1.01</a></td>
-                    <td>This is not ready yet</td>
-                </tr>
-                <tr>
-                    <td><a href="folio-v01.html" title="Open this version" target="_blank">folio v1.03</a></td>
-                    <td>This is not ready yet</td>
-                </tr>
-            </table>
-            <br>
-            <div class="h1-18ptBold" id="A02">
-            </div>
-            <!--<a href="index.html">Home</a>-->
-            <br>
-            <br>
-            <p class="h2-BlueBG">1st heading - but anchor is 4 lines above </p>
-            <h3>Text to test the anchors</h3>
-            <p>The header should stick to the top on most devices unless URL's are too long or images are too wide</p>
-            <p>If the header disappears on scrolling (usually on a mobile), delete sections until it works again.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <br>
-            <a href="index.html">Home</a>
-            <br>
-            <p class="h2-BlueBG">End of page</p>
-        </div>
-    </div>
+<body>
+    <h1 class="page_start">Atticus's Portfolio</h1>
+    <header>
+        <nav class="header-flexcontainer">
+            <button type="button">Home</button>
+            <button type="button">Folio</button>
+            <button type="button">Theory</button>
+            <button type="button">About Me</button>
+        </nav>
+    </header>
+    <main>
+        <div></div>
+        <h1>Header 1</h1>
+        <img class="img1" src="assets/images/index.jpg" height="250px">
+        <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum</p>
+        <div class="div_whitespace"></div>
+
+    </main>
 </body>
+
 </html>

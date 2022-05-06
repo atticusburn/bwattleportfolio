@@ -1,0 +1,180 @@
+﻿/*Fixed header code copied from: https://www.w3schools.com/howto/howto_js_sticky_header.asp
+    but JavaScript seemed problematic, so was abandoned
+    26/6/21 Nev "fixed" header is very temperamental on Android mobile - Chrome v91.0.4472.101
+    it was broken by this 40 character email with the normal font:
+    Xxxxx.Xxxxxxxxxxxxx@education.nsw.gov.au
+    Also broken by long web links - avoided with a short "display text" or small font.
+    If fixed header is broken - delete sections 1 by 1 to find the problem
+*/
+body {
+    margin: 0;
+    /* font-family: "Georgia", sans-serif */;
+    color: #2e2419
+}
+
+p {
+    font-family: "Georgia", sans-serif
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #362c21;
+}
+
+th, td {
+/*    text-align: center;*/
+    padding: 16px;
+    font-size: 18pt;
+    border: 1px solid #362c21;
+}
+
+.header {
+    position: fixed;
+    text-align: center;
+    font-size: 22pt;
+    width: 95%;
+    padding: 10px 10px;
+    margin-left: 1.5%;
+    margin-top: 10px;
+    background: #cacaca;
+    font-family: Verdana, sans-serif;
+    border-radius: 4px;
+    box-shadow: rgba(173, 173, 173, 0.3) 1px 2px 4px;
+    /*    color: #f1f1f1;*/
+}
+
+.header p {
+    text-align:start;
+    margin: 0px 0px 0px 0px;
+}
+.content {
+    padding: 16px;
+}
+
+.text-red {
+    color: rgb(230, 48, 3);
+}
+
+.h1-18ptBold {
+    text-align: center;
+    font-size: 18pt;
+/*    font-family: Calibri, sans-serif;*/
+/*    margin: 0cm;*/
+    font-weight: bold;
+}
+
+.h2-BlueBG {
+    font-size: 20pt;
+    text-align: center;
+    color: rgb(116, 116, 116);
+    background-color: #ffffff;
+    width: 40%;
+    margin-bottom: 18px;
+    font-family: 'Futura', 'Helvetica';
+    border: 1px solid black;
+    border-radius: 1px;
+    
+}
+
+.body-calibri {
+    font-family: Calibri;
+}
+
+.body-purple {
+/*    font-family: Calibri;*/
+    color: #7030A0;
+}
+
+.body-acknowledgement {
+/*    font-family: Calibri;*/
+    font-style: italic;
+    font-size: 9.0pt;
+    color: #595959;
+}
+.body-smallFont {
+        font-family: 'Arial Narrow';
+/*    font-style: italic;*/
+    font-size: 7.0pt;
+/*    color: #595959;*/
+}
+
+.header-links {
+    font-size: 30pt;
+    display: flex;
+    align-content: center;
+    width: 60%;
+    justify-content: space-between;
+    float: right;
+    padding-right: 10%;
+}
+
+.header-links > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+.header-logo {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    opacity: 0;
+    transition: .5s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-logo:hover .overlay {
+    opacity: 1;
+  }
+
+.h1_title {
+    font-size: 48pt;
+    text-align: center;
+    font-family: 'Futura', 'Helvetica';
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.div_whitespace {
+    height: 100px;
+}
+
+.navbar {
+    background-color:#ffffff;
+    width: 70px;
+    height: 60%;
+    position: fixed;
+    margin-top: 10%;
+    opacity: 0.1;
+    transition: .5s ease;
+    font-family: 'Futura', 'Helvetica';
+    font-size: 14pt;
+    text-align: center;
+    margin-left: 3px;
+    border: 1px solid #525252;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar:hover {
+    opacity: 0.9;
+    border-color:#202020;
+    border: 1px solid black;
+
+}
+
+.navbar_button {
+    background-color: #838383;
+    width: 65px;
+    height: 40px;
+}
