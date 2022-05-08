@@ -1,0 +1,131 @@
+﻿/* || Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color:rgba(73, 73, 73);
+    background-color: #f1f1f1; 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-weight: 100;
+    height: 200%;
+}
+h1 {
+    text-align: center;
+    font-size: 40pt;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: 1px;
+    width: 100%;
+    background-color:#362c21;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+p {
+    font-size: 14pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.p1 {
+    width: 40%;
+    margin-right: 60px;
+    float:right;
+}
+
+.img1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:10%
+}
+.page_start {
+    font-family: "Didot", "Georgia", "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-size: 72pt;
+    text-align: center;
+    margin-top: 11%;
+    margin-bottom: 250px;
+    font-weight:normal;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #362c21;
+}
+
+th, td {
+    padding: 16px;
+    font-size: 18pt;
+    border: 1px solid #362c21;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    font-size: 22pt;
+    width: 95%;
+    padding: 10px 10px;
+    margin-left: 1.5%;
+    margin-top: 10px;
+    border-radius: 4px;
+    color:rgb(105, 104, 104);
+}
+.header-flexcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgba(241, 241, 241, 0.5);
+}
+.header-flexcontainer > button {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    -moz-user-select: none;
+    border: 0px solid rgb(105, 104, 104);
+    color: rgb(105, 104, 104);
+    border-radius: 2px;
+
+}
+.header-flexcontainer > button:hover {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: rgb(35, 35, 35);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
+
+
+
+.div_whitespace {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
