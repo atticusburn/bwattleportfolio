@@ -7,16 +7,13 @@
 body {
     color:rgba(73, 73, 73);
     background-color: #f1f1f1; 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     font-family: "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
     font-weight: 100;
     height: 200%;
 }
-body.fadeInAnimation {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
 h1 {
     text-align: center;
     font-size: 40pt;
@@ -24,7 +21,7 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-div.line {
+div {
     margin-top: 40px;
     margin-bottom: 60px;
     height: 1px;
@@ -46,32 +43,31 @@ p {
     margin-bottom: 20px;
 }
 
+.p1 {
+    width: 40%;
+    margin-right: 60px;
+    float:right;
+}
 
-h1.page_start {
+.img1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:10%
+}
+.page_start {
     font-family: "Didot", "Georgia", "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
     font-size: 72pt;
     text-align: center;
     margin-top: 11%;
-    font-weight:normal;
-}
-h2.page_start {
-    font-family: "Didot", "Georgia", "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
-    font-size: 40pt;
-    text-align: center;
     margin-bottom: 250px;
     font-weight:normal;
-    color:#8c8c8c;
 }
 
-svg {
-    margin-left:10%;
-}
+
 table {
     border-collapse: collapse;
+    width: 100%;
     border: 1px solid #362c21;
-    width: 40%;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 th, td {
@@ -88,7 +84,7 @@ header {
     width: 95%;
     padding: 10px 10px;
     margin-left: 1.5%;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 4px;
     color:rgb(105, 104, 104);
 }
@@ -131,5 +127,6 @@ header {
 
 .div_whitespace {
     height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
