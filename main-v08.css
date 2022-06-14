@@ -46,9 +46,6 @@ p {
     margin-bottom: 20px;
 }
 
-button {
-    cursor: pointer;
-}
 
 h1.page_start {
     font-family: "Didot", "Georgia", "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
@@ -103,20 +100,17 @@ header {
 }
 .header-flexcontainer > button {
     width: 250px;
-    height: 100px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-    /* animation-duration: 1s;
-    animation-timing-function: ease-in-out; */
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
     -moz-user-select: none;
     border: 0px solid rgba(105, 104, 104,0.9);
     color: rgba(105, 104, 104, 0.9);
     background-color: rgba(233, 233, 237, 0.9);
     border-radius: 2px;
-    /* padding: 0;
-    border: none; */
 
 }
 .header-flexcontainer > button:hover {
@@ -128,20 +122,6 @@ header {
     color: rgb(35, 35, 35);
     background-color: rgba(0, 0, 0, 0.1);
   }
-
-button.pressed {
-    width: 250px;
-    height: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    color: rgb(47, 47, 47);
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 0;
-    border: none;
-
-}
 
 
 
