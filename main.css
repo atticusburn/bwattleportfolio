@@ -1,4 +1,5 @@
-﻿/* || Reset CSS */
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* || Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +13,23 @@ body {
     height: 200%;
 }
 body.fadeInAnimation {
-    animation: fadeInAnimation ease 3s;
+    /* animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 h1 {
     text-align: center;
     font-size: 40pt;
     font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 200;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -31,6 +40,20 @@ div.line {
     width: 100%;
     background-color:#362c21;
 }
+
+div.separator {
+    width:100%;
+    height: 10px;
+    margin-top: 150px;
+    margin-bottom:20px;
+    clear:both;
+}
+div.mini_separator {
+    width:100%;
+    height: 1px;
+    clear:both;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -46,8 +69,38 @@ p {
     margin-bottom: 20px;
 }
 
+p.body_centre {
+    margin-left: 20%;
+    margin-right: 20%;
+    position:relative;
+}
+
+p.body_right {
+    float: right;
+    margin-right: 15%;
+    width: 35%;
+    position:relative;
+
+}
+p.body_left {
+    float: left;
+    margin-left: 15%;
+    width: 35%;
+    position:relative;
+}
+
+a > p {
+    margin-left: 40%;
+    font-size: 18pt;
+    font-weight: 200;
+
+}
 button {
     cursor: pointer;
+}
+
+audio {
+    margin-left: 40%;
 }
 
 h1.page_start {
@@ -64,6 +117,20 @@ h2.page_start {
     margin-bottom: 250px;
     font-weight:normal;
     color:#8c8c8c;
+}
+
+img.gif {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+img.folio_left {
+    margin-left: 10%;
+    float: left;
+}
+img.folio_right {
+    margin-right: 10%;
+    float: right;
 }
 
 svg {
@@ -101,7 +168,7 @@ header {
     justify-content: space-between;
     background-color: rgba(241, 241, 241, 0.5);
 }
-.header-flexcontainer > button {
+button {
     width: 250px;
     height: 100px;
     margin: 10px;
@@ -119,7 +186,7 @@ header {
     border: none; */
 
 }
-.header-flexcontainer > button:hover {
+button.unpressed:hover {
     width: 250px;
     margin: 10px;
     text-align: center;
@@ -143,13 +210,51 @@ button.pressed {
 
 }
 
+p.about_me_p1 {
+    margin-left: 40%;
+    margin-right: 15%;
+}
 
+p.about_me_p2 {
+    margin-left: 15%;
+    margin-right: 40%;
+}
+p.about_me_p3 {
+    margin-left: 30%;
+    margin-right: 15%;
+}
+p.about_me_p4 {
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
+h2.quotation {
+    font-family: "Playfair Display", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-size: 100px;
+    float:left;
+    margin-left: 10%;
+}
+h2.quotation_end {
+    font-family: "Playfair Display", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-size: 100px;
+    float:right;
+    margin-right: 10%;
+    margin-bottom: 100px;
 
-
-
-
+}
 .div_whitespace {
     height: 1000px;
 }
 
+p.small_text {
+    font-size: 8pt;
+    margin-left: 1%;
+}
+h3 {
+    margin-left: 4%;
+    font-weight: 200;
+}
+
+svg {
+    margin-left: 24%;
+}

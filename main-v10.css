@@ -1,0 +1,182 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* || Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color:rgba(73, 73, 73);
+    background-color: #f1f1f1; 
+    font-family: "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-weight: 100;
+    height: 200%;
+}
+body.fadeInAnimation {
+    /* animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+}
+
+h1 {
+    text-align: center;
+    font-size: 40pt;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.line {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: 1px;
+    width: 100%;
+    background-color:#362c21;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+p {
+    font-size: 14pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1.page_start {
+    font-family: "Didot", "Georgia", "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-size: 72pt;
+    text-align: center;
+    margin-top: 11%;
+    font-weight:normal;
+}
+h2.page_start {
+    font-family: "Didot", "Georgia", "Montserrat", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-size: 40pt;
+    text-align: center;
+    margin-bottom: 250px;
+    font-weight:normal;
+    color:#8c8c8c;
+}
+
+svg {
+    margin-left:10%;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid #362c21;
+    width: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+th, td {
+    padding: 16px;
+    font-size: 18pt;
+    border: 1px solid #362c21;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    font-size: 22pt;
+    width: 95%;
+    padding: 10px 10px;
+    margin-left: 1.5%;
+    margin-top: 20px;
+    border-radius: 4px;
+    color:rgb(105, 104, 104);
+}
+.header-flexcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgba(241, 241, 241, 0.5);
+}
+button {
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    /* animation-duration: 1s;
+    animation-timing-function: ease-in-out; */
+    -moz-user-select: none;
+    border: 0px solid rgba(105, 104, 104,0.9);
+    color: rgba(105, 104, 104, 0.9);
+    background-color: rgba(233, 233, 237, 0.9);
+    border-radius: 2px;
+    /* padding: 0;
+    border: none; */
+
+}
+button.unpressed:hover {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: rgb(35, 35, 35);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+button.pressed {
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: rgb(47, 47, 47);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0;
+    border: none;
+
+}
+
+p.about_me_p1 {
+    margin-left: 40%;
+    margin-right: 15%;
+}
+
+p.about_me_p2 {
+    margin-left: 15%;
+    margin-right: 40%;
+}
+p.about_me_p3 {
+    margin-left: 30%;
+    margin-right: 15%;
+}
+p.about_me_p4 {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h2.quotation {
+    font-family: "Playfair Display", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-size: 100px;
+    float:left;
+    margin-left: 10%;
+}
+h2.quotation_end {
+    font-family: "Playfair Display", "Avenir Next", "Helvetica Neue Ultralight", sans-serif;
+    font-size: 100px;
+    float:right;
+    margin-right: 10%;
+    margin-bottom: 100px;
+
+}
+.div_whitespace {
+    height: 1000px;
+}
+

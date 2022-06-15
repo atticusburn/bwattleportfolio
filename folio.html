@@ -1,86 +1,169 @@
 <!DOCTYPE html>
-<!--Fixed header code copied from: https://www.w3schools.com/howto/howto_js_sticky_header.asp
-    but JavaScript seemed problematic, so was abandoned.
-    If the user zooms, the header fixing is gone! -->
-<!-- 26/6/21 Nev "fixed" header is very temperamental on Android mobile - Chrome v91.0.4472.101
-    it was broken by this 40 character email with the normal font:
-    Xxxxx.Xxxxxxxxxxxxx@education.nsw.gov.au
-    Also broken by long web links - avoided with a short "display text" or small font.
-    Max recommended image size is 940 pixels. 950 does not break the fixed header, but is almost off the screen.
-    If fixed header is broken - delete sections 1 by 1 to find the problem -->
+
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>Blackwattle Web template</title>
-    <link rel="icon" href="images/logoV2x40.png">
+    <meta name="description" content="Portfolio - Atticus">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Folio - Atticus's Portfolio</title>
+    <link rel="icon" href="assets/images/logo40px.png">
     <link rel="stylesheet" href="main.css">
-    <style type="text/css">
-        body {
-            background-color: #fff3e4; /*light orange*/
-        }
-    </style>
 </head>
-<body>
-    <div class="h2-BlueBG" id="A01"></div>
-    <div class="header" id="myHeader">
-        <a href="#A01">Top</a> - <a href="#A02">Anchor2</a> - <a href="#A03">Anchor3</a> - <a href="#A04">Anchor4</a> - 
-            <a href="index.html">Home</a>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p class="h1-18ptBold">
-        <img src="images/logoV2x200.png" alt="atticus's logo" title="atticus's logo" /><br>
-    </p>
-    <p class="h1-18ptBold">
-        Atticus's Folio
-    </p>
-    <p class="h1-18ptBold">
-        This will start simple!!<br>
-    </p>
-    <div class="content">
-        <a href="index.html">Home</a>
-        <br>
-        <br>
-        <div class="h2-BlueBG">
-            1st heading - Tables, bullets &amp; numbered lists
-        </div>
-        <br>
-        <div class="h1-18ptBold" id="A02"></div>
-        <a href="index.html">Home</a>
-        <br>
-        <br>
-        <div class="h2-BlueBG">
-            2nd heading - but anchor is 4 lines above 
-        </div>
-        <br>
-        <div class="h1-18ptBold" id="A03"></div>
-        <a href="index.html">Home</a>
-        <br>
-        <br>
-        <div class="h2-BlueBG">
-            3rd heading - image optimisation
-        </div>
-        <br>
-        <div class="h1-18ptBold" id="A04"></div>
-        <a href="index.html">Home</a>
-        <br>
-        <br>
-        <div class="h2-BlueBG">
-            4th heading -
-            Website editors (authoring tools)
-        </div>
-        <br>
-        <a href="index.html">Home</a>
-        <br>
-        <div class="body-purple">
-            <br>
-        </div>
-        <div class="h2-BlueBG">
-            End of page
-            - DELETE what you don&#39;t need
-        </div>
-    </div>
+
+<body id="index">
+    <header id="content">
+        <nav class="header-flexcontainer">
+            <a href="index.html">
+                <img src="assets/images/logo500px_darker_transparent.png" width="120px"
+                    style="color: rgba(233, 233, 237, 0.9); opacity: 0.9;">
+            </a>
+
+            <a href="index.html#content">
+                <button type="button" class="unpressed">Home</button>
+            </a>
+            <a href="folio.html#content">
+                <button type="button" class="pressed">Folio</button>
+            </a>
+            <a href="index.html#content">
+                <button type="button" class="unpressed">Theory</button>
+            </a>
+            <a href="about_me.html#content">
+                <button type="button" class="unpressed">About Me</button>
+            </a>
+        </nav>
+    </header>
+    <div class="line"></div>
+    <main>
+        <h1>Folio</h1>
+        <h2>Table of Contents</h2>
+        <nav>
+            <a href="#animation">
+                <p>Animation / Video</p>
+            </a>
+            <a href="#audio">
+                <p>Audio</p>
+            </a>
+            <a href="#previous_animation">
+                <p>Previous Animation</p>
+            </a>
+            <a href="#vector">
+                <p>Vector Graphics</p>
+            </a>
+        </nav>
+
+        <div class="separator" id="animation"></div>
+        <h1>Animation / Video</h1>
+        <p class="body_centre">
+            A stop-motion gif with animation elements was made by cutting up a video and inserting
+            images onto it.
+        </p>
+        <img src="assets/gif/ipt_gif.gif" width="60%" class="gif">
+        <h2>Making the animation</h2>
+        <p class="body_right">
+            The editing software used for the video aspect was iMovie.
+            The editing was started by adding the image into iMovie. A clip was then selected to be edited, and the rest
+            of the video was cut. The final frame of the clip was then screenshotted to be edited in Photopea (a free
+            online Photoshop copy)
+        </p>
+        <img src="assets/images/folio/skate/step1.png" class="folio_left" height=300px>
+        <div class="mini_separator"></div>
+
+        <p class="body_left">
+            In the photo editing software, the skater was isolated by erasing the rest of the image around him.
+            Following this, an outline of his shape was drawn, and this was poorly coloured in.
+        </p>
+        <img src="assets/images/folio/skate/step2.png" class="folio_right" height=300px>
+        <div class="mini_separator"></div>
+
+        <p class="body_right">
+            A blank layer was created, and the previous layer was overlayed. Using this overlay, the next frame of the
+            animation was drawn. This was repeated several more times to produce each frame of the character in the
+            animation. The image shown is every frame overlayed on top of one another.
+        </p>
+        <img src="assets/images/folio/skate/step3.png" class="folio_left" height=300px>
+        <div class="mini_separator"></div>
+
+        <p class="body_left">
+            Each frame was added in to an edited photo of the final frame of the video, where the skater was edited out.
+            Each frame was hidden, and the first frame was shown, and the image was exported. This process was repeated
+            for every frame, and 9 new frames of animation were created and added in to iMovie.
+        </p>
+        <img src="assets/images/folio/skate/step4.png" class="folio_right" height=300px>
+        <div class="mini_separator"></div>
+
+        <p class="body_right">
+            Finally, each frame was added as a clip and it's duration was reduced to the smallest length, 0.1s.
+            As the video was at a higher framerate than 10fps, this was an issue. This was resolved by slowing down the
+            video part of the clip and exporting the total animation, and then finally speeding it up.
+        </p>
+        <img src="assets/images/folio/skate/step5.png" class="folio_left" height=300px>
+        <div class="separator" id="audio"></div>
+        <h1>Audio</h1>
+        <p class="body_centre">
+            To practise mixing audio in Audacity, I created an audio file using a wide range of different sound effects,
+            and a reversed, sped up and edited version of Erik Satie's Gnossiene No.1
+        </p>
+        <audio controls>
+            <source src="assets/audio/ipt_mixing.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <h2>Making the audio file</h2>
+        <p class="body_right">
+            To first get aquainted with the Audacity software, I learnt how to generate a tone, and
+            how to mix multiple tones together to create a "beat".
+            To start, an empty track was created, and a tone was generated of 201Hz.
+        </p>
+        <img src="assets/images/folio/audio/step1.png" class="folio_left" width=500px>
+        <div class="mini_separator"></div>
+
+        <p class="body_left">
+            Following this, a second tone of 202Hz and a third tone of 203Hz were generated on separate tracks. When
+            played, the audio played a rising and lowering constant tone. Finally, these tracks were mixed onto a third
+            track, to produce a visible waveform of the audio. The final track is shown at the bottom in this image.
+        </p>
+        <img src="assets/images/folio/audio/step2.png" class="folio_right" width=500px>
+        <div class="mini_separator"></div>
+        <p class="body_right">
+            After I got enough practice with the Audacity interface, I started a new file and imported several provided
+            sound effects. I practiced moving the separate tracks around and adjusting their volume when other tracks
+            are playing, as well as adding effects. I applied a reverse effect on Satie's Gnossiene No.1, and sped it up
+            as the song was too long. I also adjusted the pitch slightly. I cut out some quiet portions of the song, as
+            I could not sustainably keep speeding it up.
+        </p>
+        <img src="assets/images/folio/audio/step3.png" class="folio_left" width=500px>
+        <div class="mini_separator"></div>
+
+        <div class="separator" id="previous_animation"></div>
+        <h1>Previous Animation</h1>
+        <p class="body_centre">
+            This animation was created using Adobe Animate for a previous assessment task in May 2021. It was originally
+            designed to be a website header.
+        </p>
+        <img src="assets/gif/meowth_land_animation.gif" class="gif" width=800px>
+
+        <div class="separator" id="vector"></div>
+        <h1>Vector Graphics</h1>
+        <p class="body_centre">
+            The image below is a vector image, and is generated using a path consisting of both cubic bezier curves and
+            straight lines, and is able to be infinitely enlarged or zoomed in. The vector image is uses mathematics to
+            generate a path for an image, rather than bitmap images, which are made up of a series of pixels.
+        </p>
+        <svg width="50%" height="50%" viewBox="0 0 400 400" align="left">
+            <title>Vector path</title>
+            <desc>A path that draws a triangle</desc>
+            <path d="
+                M 100 100 
+                L 300 50 
+                C 300 100, 200 100, 300 200
+                L 200 300
+                C 200 250, 300 350, 150 150
+
+            z" fill="green" stroke="pink" stroke-width="3" />
+        </svg>
+        <div class="div_whitespace"></div>
+    </main>
 </body>
+
 </html>
