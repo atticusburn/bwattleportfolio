@@ -1,343 +1,46 @@
 <!DOCTYPE html>
-<!--Fixed header code copied from: https://www.w3schools.com/howto/howto_js_sticky_header.asp
-    but JavaScript seemed problematic, so was abandoned.
-    If the user zooms, the header fixing is gone! -->
-<!-- 26/6/21 Nev "fixed" header is very temperamental on Android mobile - Chrome v91.0.4472.101
-    it was broken by this 40 character email with the normal font:
-    Xxxxx.Xxxxxxxxxxxxx@education.nsw.gov.au
-    Also broken by long web links - avoided with a short "display text" or small font.
-    Max recommended image size is 940 pixels. 950 does not break the fixed header, but is almost off the screen.
-    If fixed header is broken - delete sections 1 by 1 to find the problem -->
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>Blackwattle Web Samples</title>
-    <link rel="icon" href="images/SSC_SmallLogo.png">
+    <meta name="description" content="Portfolio - Atticus">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Theory - Atticus's Portfolio</title>
+    <link rel="icon" href="assets/images/logo40px.png">
     <link rel="stylesheet" href="main.css">
-    <!--    example of code commented out>-->
-    <style type="text/css">
-        body {
-            background-color: rgba(193,240,176,1); /*light green - the "a" in rgba is "alpha"*/
-        }
-    </style>
 </head>
-<body>
-    <div class="h2-BlueBG" id="A01"></div>
-    <div class="header" id="myHeader">
-        <a href="#A01">Tables(top)</a> - <a href="#A02">Anchor2</a> - <a href="#A03">Images</a> - <a href="#A04">Editors</a> - 
-            <a href="index.html">Home</a>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p class="h1-18ptBold">
-        <img src="images/YourLogo-JPG.jpg" alt="Daggy example of a logo" title="Daggy logo" /><br>
-    </p>
-    <p class="h1-18ptBold">
-        A SIMPLE WEBSITE TEMPLATE, SUITABLE FOR MOBILE AND DESKTOP
-    </p>
-    <p class="h1-18ptBold">
-        The site is self contained with no references to libraries such as &quot;Bootstrap&quot;!&nbsp;
-                        <br>
-        <br>
-        <span class="text-red">Note that the logo above does not have dimensions in the "img src"</span>
-    </p>
-    <p class="h1-18ptBold">
-        <span style='color: red'>All images should be optimised and on this template 900 px is the optimum width for mobile and PC<br>
-            <br>
-            Add more ..      </span>
-    </p>
-    <div class="content">
-        <a href="index.html">Home</a>
-        <br>
-        <br>
-        <div class="h2-BlueBG">
-            1st heading - Tables, bullets &amp; numbered lists
-        </div>
-        <a href="index.html">Home</a>
-        <br>
-        <br>
-        <div class="body-purple">
-            Example of a 100% width table with colours overriding the CSS:
-        </div>
-        <div>
-            <table>
-                <tr>
-                    <td style="background-color: #FFC000;">Orange fill<br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="background-color: #92D050;">Green<br>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <br>
-        <div class="body-purple">
-            Example of a &quot;Bullet point list&quot; (unordered list):
-        </div>
-        <ul>
-            <li>This is an &quot;unordered List&quot; &lt;ul&gt;</li>
-            <li>point 2</li>
-            <li>Each point is between list tags &lt;li&gt; point 3 &lt;/li&gt;</li>
-            <li>point 4</li>
-            <li>This &quot;unordered List&quot; ends with &lt;/ul&gt; </li>
-        </ul>
-        <br>
-        <div class="body-purple">
-            Example of a &quot;Numbered list&quot; (ordered list):
-        </div>
-        <ol>
-            <li>This is an &quot;ordered list&quot; &lt;ol&gt;</li>
-            <li>Point 2</li>
-            <li>Each point is between list tags &lt;li&gt; point 3 &lt;/li&gt;</li>
-            <li>Point 4</li>
-            <li>This &quot;ordered List&quot; ends with &lt;/ol&gt;</li>
-        </ol>
-        <div class="body-purple">
-            Example of a colour analysis - converting to Binary and Hex with the Blackwattle logo. This is also an example of a complex table with CSS to override the standard table font size and spans for the subscripts:<br>
-        </div>
-        <div style="direction: ltr">
-            <table>
-                <tr>
-                    <td style="text-align: center;">
-                        <img src="images/logo-Bwattle-210x107.jpg" width="160" height="81" alt="Small Logo as demo" /><br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">Base 10
-                        <br>
-                        Base 2
-                        <br>
-                        Base 16
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">Base 10
-                        <br>
-                        Base 2
-                        <br>
-                        Base 16
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">Base 10
-                        <br>
-                        Base 2
-                        <br>
-                        Base 16
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">Hex<br>
-                        Colour
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt;">
-                        <br>
-                        Colour
-                        <br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/logo-Bwattle-210x107.jpg" width="70" height="34" alt="Small Logo as demo" /><br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center; color: red;">Red (R)
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center; color: green;">Green (G)
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center; color: blue;">Blue (B)
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">Hex RGB
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">Swatch
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-size: 12pt; color: #4145C4;">Main1 - blue
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">65<span style="vertical-align: sub; font-size: 8pt;">10</span>
-                        <br>
-                        0100 0001
-                        <br>
-                        = 41<span style="vertical-align: sub; font-size: 8pt;">16</span>
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">69<span style="vertical-align: sub; font-size: 8pt;">10</span>
-                        <br>
-                        0100 0101
-                        <br>
-                        = 45<span style="vertical-align: sub; font-size: 8pt;">16</span>
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">196<span style="vertical-align: sub; font-size: 8pt;">10</span>
-                        <br>
-                        1100 0100
-                        <br>
-                        = C4<span style="vertical-align: sub; font-size: 8pt;">16</span>
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">#4145C4
-                    </td>
-                    <td style="background-color: #4145C4;"></td>
-                </tr>
-                <tr>
-                    <td style="font-size: 12pt; color: #FDBD35;">Main2 - orange
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">253<span style="vertical-align: sub; font-size: 8pt;">10</span>
-                        <br>
-                        1111 1101
-                        <br>
-                        = FD<span style="vertical-align: sub; font-size: 8pt;">16</span>
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">189<span style="vertical-align: sub; font-size: 8pt;">10</span>
-                        <br>
-                        1011 1101
-                        <br>
-                        = BD<span style="vertical-align: sub; font-size: 8pt;">16</span>
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">53<span style="vertical-align: sub; font-size: 8pt;">10</span>
-                        <br>
-                        0011 0101
-                        <br>
-                        = 35<span style="vertical-align: sub; font-size: 8pt;">16</span>
-                        <br>
-                    </td>
-                    <td style="font-size: 10.0pt; text-align: center;">#FDBD35
-                    </td>
-                    <td style="background-color: #FDBD35;"></td>
-                </tr>
-            </table>
-        </div>
 
-        <br>
-        <h3>Text to test the anchors</h3>
-        <p>The header should stick to the top on most devices unless URL's are too long or images are too wide</p>
-        <p>If the header disappears on scrolling (usually on a mobile), delete sections until it works again.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <br>
-        <div class="h1-18ptBold" id="A02"></div>
-        <a href="index.html">Home</a>
-        <br>
-        <br>
-        <div class="h2-BlueBG">
-            2nd heading - but anchor is 4 lines above 
-        </div>
-        <h3>Text to test the anchors</h3>
-        <p>The header should stick to the top on most devices unless URL's are too long or images are too wide</p>
-        <p>If the header disappears on scrolling (usually on a mobile), delete sections until it works again.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <br>
-        <br>
-        <div class="h1-18ptBold" id="A03"></div>
-        <br>
-        <a href="index.html">Home</a>
-        <br>
-        <br>
-        <div class="h2-BlueBG">
-            3rd heading - image optimisation
-        </div>
-        <div class="body-purple">
-            <p>This image is 660 x 440 JPG 73KB (JPG is lossy compression - combining areas of the same colour):</p>
-        </div>
-        <p class="body-acknowledgement">
-            <img src="images/EV-Jag-660x440-JPG.jpg" width="660" height="440" alt="Stylised image of EV Jaguar of the future" title="Jag 660px wide" /><br>
-            Jaguar to become all-EV brand from 2025 - carsales.com.au<br>
-            <a href="https://www.carsales.com.au/editorial/details/jaguar-to-switch-to-ev-brand-from-2025-128560/">https://www.carsales.com.au/editorial/details/jaguar-to-switch-to-ev-brand-from-2025-128560/</a><br>
-            Screen clipping taken: 15/06/2021<br>
-        </p>
-        <br>
-        <div class="body-purple">
-            This image is 660 x 440 PNG 485KB (large because PNG is lossless compression) - no dimensions in &quot;img src&quot; tag:
-        </div>
-        <p class="body-acknowledgement">
-            <img src="images/EV-Jag-660x440-PNG.png" alt="Stylised image of EV Jaguar of the future" title="Jag 660px wide" /><br>
-            Jaguar to become all-EV brand from 2025 - carsales.com.au<br>
-            <a href="https://www.carsales.com.au/editorial/details/jaguar-to-switch-to-ev-brand-from-2025-128560/">https://www.carsales.com.au/editorial/details/jaguar-to-switch-to-ev-brand-from-2025-128560/</a><br>
-            Screen clipping taken: 15/06/2021<br>
-        </p>
-        <br>
-        <br>
-        <div class="body-purple">
-            This image is 880 x 1319 JPG 149KB (the width is almost maximum for mobile phones):
-        </div>
-        <p class="body-acknowledgement">
-            <img src="images/Cat-880x1319.jpg" alt="Image of a cat jumping" title="Cat Jumping - 880px wide" /><br>
-            Page has no name<br>
-            <a href="https://designbump.com/wp-content/uploads/2014/09/funny-jumping-cats-94__880.jpg">https://designbump.com/wp-content/uploads/2014/09/funny-jumping-cats-94__880.jpg</a><br>
-            Screen clipping taken: 27/06/2021<br>
-        </p>
-        <div class="body-purple">
-            <p>JPG or PNG - both compressed image formats - save as both and choose keep the smaller (for the logo below, the JPG is smaller):</p>
-            <img src="images/Image-JPGvsPNG-472x130-PNG.png" alt="Image of Window Explorer showing JPG and PNG file sizes"
-                title="Window Explorer showing JPG and PNG file sizes" /><br>
-            <br>
-            Dreamweaver (DW) is a great editor for HTML and JavaScript. It is free for students under the DET licencing for Adobe Creative Cloud 
-            and works well on both Mac and PC. It interacts well with GitHub, has a great &quot;Live View&quot; 
-            but has different error checking standards to VS:
-            <img src="images/DW-1326x1012-PNG.png" width="940" height="717" alt="Image of the Dreamweaver split interface" /><br>
-            <!--<img src="images/DW-1326x1012-PNG.png" width="1326" height="1012" alt=""/><br>-->
-            <br>
-            It is essential to set up the &quot;Site&quot; when using Dreamweaver. More information in class.<br>
-            <br>
-            <br>
-            To enhance this template further, you could use "Collapsible" sections with buttons. 
-            See: <a href="https://www.w3schools.com/howto/howto_js_collapsible.asp">https://www.w3schools.com/howto/howto_js_collapsible.asp</a>
-            <br>
-            <br>
-        </div>
-        Note that the images above are a maximum of 940 pixels wide.<br>
-        <br>
-        <br>
-        <br>
-        <h3>Text to test the links and anchors.</h3>
-        <p>On mobile phones, the header should stick to the top unless the page is zoomed or elements such as URL's or images are too wide.</p>
-        <p>If the header disappears on scrolling (usually on a mobile), delete sections until it works again.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <div class="h2-BlueBG">
-            End of page
-        </div>
-    </div>
-</body>
+
+
+< id="index">
+    <header id="content">
+        <nav class="header-flexcontainer">
+            <a href="index.html">
+                <img src="assets/images/logo500px_darker_transparent.png" width="120px"
+                    style="color: rgba(233, 233, 237, 0.9); opacity: 0.9;">
+            </a>
+
+            <a href="index.html#content">
+                <button type="button" class="unpressed">Home</button>
+            </a>
+            <a href="folio.html#content">
+                <button type="button" class="unpressed">Folio</button>
+            </a>
+            <a href="theory.html#content">
+                <button type="button" class="pressed">Theory</button>
+            </a>
+            <a href="about_me.html#content">
+                <button type="button" class="unpressed">About You</button>
+            </a>
+        </nav>
+    </header>
+    <div class="line"></div>
+    <h1>Planning Tools</h1>
+    <p class="body_centre">
+
+    </p>
+
+    </body>
+
 </html>
